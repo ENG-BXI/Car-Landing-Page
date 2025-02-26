@@ -1,0 +1,11 @@
+.links li {
+    text-transform: capitalize;
+    cursor: pointer;
+ 
+}
+
+.links li:hover {
+    color: var(--first-color-alt);
+    filter: drop-shadow(0 0 10px var(--first-color-alt));
+        -webkit-filter: drop-shadow(0 0 10px var(--first-color-alt));
+}

@@ -1,0 +1,8 @@
+.About-card {
+    width: 60%;
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,57 @@
+
+.HeroImage {
+    width: 50%;
+}
+
+@media screen and (min-width:690px) {
+    .HeroImage {
+        width: 300px;
+    }
+}
+
+.start-circle {
+    border: 3px solid green;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 green;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
+
+.start-circle:hover {
+    box-shadow: 0 0 8px 0 green;
+}
+
+.start-circle:hover p {
+    text-shadow: 0 0 5px green, 0 0 8px green,
+        0 0 16px green;
+}
+
+.start-circle::after {
+    content: "";
+    top: 50%;
+    left: 50%;
+    border: 2px solid green;
+    box-shadow: inherit;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.start-circle p {
+    padding: 25px 20px;
+    margin: 0;
+}
