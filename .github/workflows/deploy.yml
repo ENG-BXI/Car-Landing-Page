@@ -30,7 +30,7 @@ jobs:
 
       # الخطوة 5: النشر على Netlify
       - name: Deploy to Netlify
-        uses: netlify/actions/cli@v2
+        uses: netlify/actions/cli@main # استخدم v3 بدلاً من v2
         with:
           args: deploy --dir=build --prod
         env:
