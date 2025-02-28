@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
   return (
     <header className='d-flex container mt-3 justify-content-between align-items-center mb-5'>
-      <a href='#' className='logo d-flex column-gap-1 align-items-center'>
+      <a href='/#' className='logo d-flex column-gap-1 align-items-center' >
         <img src={logoImage} style={{height: '30px'}} alt='LogoImage' />
         Elecar
       </a>
