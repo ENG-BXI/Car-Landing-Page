@@ -5,8 +5,8 @@ import './Hero.css';
 
 let InfoList = [
   {icon: 'Km', number: '873', text: 'MILEAGE'},
-  {icon: <i className='ri-temp-cold-fill'></i>, number: '30°', text: 'TEMPERATURE'},
-  {icon: <i className='ri-flashlight-fill'></i>, number: '94%', text: 'BATTERY'}
+  {icon: <i className='ri-temp-cold-fill'></i>, number: '24°', text: 'TEMPERATURE'},
+  {icon: <i className='ri-flashlight-fill'></i>, number: '95%', text: 'BATTERY'}
 ];
 function InfoItem(props) {
   return (
