@@ -15,7 +15,7 @@ let PopularCarCardData = [
 ];
 const Popular = () => {
   return (
-    <section id='popular' className=' container d-flex flex-column align-items-center position-relative'>
+    <section id='popular' className='popular container d-flex flex-column align-items-center position-relative'>
       <h2 className='text-center mb-4'>
         Choose Your Electric Car <br /> Of The Porsche Brand
       </h2>
@@ -38,7 +38,7 @@ const Popular = () => {
           990: {slidesPerView: 3.5, spaceBetween: 20},
           1024: {slidesPerView: 4, spaceBetween: 20}
         }}
-        className='w-100 d-flex position-relative '
+        className='swiper-cars w-100 d-flex position-relative '
         style={{height: '400px'}}
       >
         {PopularCarCardData.map((element, index) => {

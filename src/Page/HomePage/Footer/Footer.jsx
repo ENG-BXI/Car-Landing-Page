@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='container d-flex flex-column row-gap-3'>
+    <footer className='footer container d-flex flex-column row-gap-3'>
       <div>
         <h4 className='text-white'>Elecar</h4>
         <p>

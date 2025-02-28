@@ -14,7 +14,7 @@ const Featured = () => {
     {name: 'Porsche', type: 'Panamera', image: require('../../../assets/img/featured5.png'), salary: '$126,900'}
   ];
   return (
-    <section id='featured' className='container  text-center mb-0'>
+    <section id='featured' className='featured container  text-center mb-0'>
       <h2 className='mb-5'>Featured Luxury Cars</h2>
       <Swiper
         autoplay={{delay: 3000}}
@@ -35,7 +35,7 @@ const Featured = () => {
           990: {slidesPerView: 3.5, spaceBetween: 20},
           1024: {slidesPerView: 4, spaceBetween: 20}
         }}
-        className='w-100 d-flex position-relative '
+        className='featured-cars w-100 d-flex position-relative '
         style={{height: '350px'}}
       >
         {CarData.map((element, index) => {

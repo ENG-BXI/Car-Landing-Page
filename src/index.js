@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './Style/BaseStyle.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import "swiper/css"; 
+import 'swiper/css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);

@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroImage from '../../../assets/img/home.png';
-
 import './Hero.css';
 
 let InfoList = [
@@ -11,7 +10,7 @@ let InfoList = [
 function InfoItem(props) {
   return (
     <>
-      <div className='d-flex flex-column row-gap-2 align-items-center'>
+      <div className='info-card d-flex flex-column row-gap-2 align-items-center'>
         <div style={{backgroundColor: 'var(--container-color'}} className={`py-1 ${props.index === 0 ? 'px-1' : 'px-2'} rounded-circle text-white`}>
           {' '}
           {props.icon}
@@ -22,8 +21,8 @@ function InfoItem(props) {
     </>
   );
 }
-const Hero = () => {
-  return (
+const Hero = () => { 
+  return ( 
     <section id='hero' className='hero container d-flex flex-column align-items-center '>
       <h2 className='mb-4'>Choose The Best Car</h2>
       <h3>Porsche Mission E</h3>
