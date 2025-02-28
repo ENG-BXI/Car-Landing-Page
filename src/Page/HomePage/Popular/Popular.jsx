@@ -1,11 +1,10 @@
 import React from 'react';
-import Pimage from '../../../assets/img/popular1.png';
 import './Popular.css';
-import PopularCarCard from '../../../Components/PopularCarCard';
+import CarCard from '../../../Components/CarCard';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css/autoplay';
-import 'swiper/css/pagination'; // استيراد ستايل الباجنيشن
-import {Pagination} from 'swiper/modules'; // استيراد الباجنيشن كموديول
+import 'swiper/css/pagination'; 
+import {Pagination, Autoplay} from 'swiper/modules';
 
 let PopularCarCardData = [
   {name: 'Porsche', type: 'Turbo S', image: require('../../../assets/img/popular1.png'), sec: '3.7 Sec', maxSpeed: '356 Km/h', enginType: 'Electric', salary: '$175,900'},
@@ -16,7 +15,7 @@ let PopularCarCardData = [
 ];
 const Popular = () => {
   return (
-    <section className=' container d-flex flex-column align-items-center position-relative'>
+    <section id='popular' className=' container d-flex flex-column align-items-center position-relative'>
       <h2 className='text-center mb-4'>
         Choose Your Electric Car <br /> Of The Porsche Brand
       </h2>
@@ -28,7 +27,7 @@ const Popular = () => {
           el: '.swiper-pagination',
           type: 'bullets'
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         loop={true}
         effect='cube'
         breakpoints={{
@@ -39,14 +38,13 @@ const Popular = () => {
           990: {slidesPerView: 3.5, spaceBetween: 20},
           1024: {slidesPerView: 4, spaceBetween: 20}
         }}
-        onSwiper={swiper => console.log(swiper)}
         className='w-100 d-flex position-relative '
         style={{height: '400px'}}
       >
         {PopularCarCardData.map((element, index) => {
           return (
-            <SwiperSlide>
-              <PopularCarCard key={index} name={element.name} type={element.type} image={element.image} sec={element.sec} maxSpeed={element.maxSpeed} enginType={element.enginType} salary={element.salary} />
+            <SwiperSlide key={index}>
+              <CarCard name={element.name} type={element.type} image={element.image} sec={element.sec} maxSpeed={element.maxSpeed} enginType={element.enginType} salary={element.salary} />
             </SwiperSlide>
           );
         })}

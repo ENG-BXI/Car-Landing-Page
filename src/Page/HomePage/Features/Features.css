@@ -1,0 +1,50 @@
+
+.feature-cover {
+    overflow: hidden;
+}
+
+.map-image {
+    min-width: 260px;
+    max-width: 600px;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+
+}
+
+.white-car {
+    position: absolute;
+    top: 3rem;
+    width: 130px;
+}
+
+.feature-image-card {
+    background: rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(7px);
+    width: 100px;
+    padding: 0.5rem;
+}
+.feature-image-card h5 {
+    font-size: 14px;
+}
+.feature-image-card p{
+    font-size: 11px;
+}
+
+.feature-image-card-1 {
+    top: 5rem;
+    left: 4.5rem;
+}
+
+.feature-image-card-2 {
+    top: 7rem;
+    right: 5rem;
+}
+
+.feature-image-card-3 {
+    top: 14rem;
+    left: 4.5rem;
+}

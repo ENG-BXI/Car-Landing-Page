@@ -10,6 +10,8 @@
 }
 
 .start-circle {
+    color: var(--text-color);
+    text-decoration: none;
     border: 3px solid green;
     cursor: pointer;
     box-shadow: 0 0 5px 0 green;

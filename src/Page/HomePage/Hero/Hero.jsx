@@ -1,10 +1,12 @@
 import React from 'react';
 import HeroImage from '../../../assets/img/home.png';
+import ReactDOM from 'react-dom';
+
 import './Hero.css';
 
 let InfoList = [
   {icon: 'Km', number: '873', text: 'MILEAGE'},
-  {icon: <i class='ri-temp-cold-fill'></i>, number: '24°', text: 'TEMPERATURE'},
+  {icon: <i className='ri-temp-cold-fill'></i>, number: '24°', text: 'TEMPERATURE'},
   {icon: <i className='ri-flashlight-fill'></i>, number: '94%', text: 'BATTERY'}
 ];
 function InfoItem(props) {
@@ -20,10 +22,10 @@ function InfoItem(props) {
       </div>
     </>
   );
-}
+}  
 const Hero = () => {
   return (
-    <section className='hero container d-flex flex-column align-items-center '>
+    <section id='hero' className='hero container d-flex flex-column align-items-center '>
       <h2 className='mb-4'>Choose The Best Car</h2>
       <h3>Porsche Mission E</h3>
       <p>
@@ -36,9 +38,9 @@ const Hero = () => {
         })}
       </div>
       {/* start circle */}
-      <div className='start-circle'>
+      <a href='#about' className='start-circle'>
         <p>start</p>
-      </div>
+      </a>
     </section>
   );
 };
