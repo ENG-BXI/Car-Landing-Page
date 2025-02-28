@@ -4,15 +4,15 @@ import './Header.css';
 const Header = () => {
   return (
     <header className='d-flex container mt-3 justify-content-between align-items-center mb-5'>
-      <div className='logo d-flex column-gap-1 align-items-center'>
+      <a href='#' className='logo d-flex column-gap-1 align-items-center'>
         <img src={logoImage} style={{height: '30px'}} alt='LogoImage' />
         Elecar
-      </div>
+      </a>
       <ul className='links d-none d-sm-flex column-gap-3 mb-0'>
-        <li>home</li>
-        <li>about</li>
-        <li>popular</li>
-        <li>featured</li>
+        <a href='#hero'>Home</a>
+        <a href='#about'>about</a>
+        <a href='#popular'>popular</a>
+        <a href='#featured'>featured</a>
       </ul>
     </header>
   );

@@ -1,11 +1,14 @@
-.links li {
+.logo,
+.links a {
     text-transform: capitalize;
     cursor: pointer;
- 
+    color: var(--text-color);
+    text-decoration: none;
 }
 
-.links li:hover {
+.links a:hover,
+.logo:hover {
     color: var(--first-color-alt);
-    filter: drop-shadow(0 0 10px var(--first-color-alt));
-        -webkit-filter: drop-shadow(0 0 10px var(--first-color-alt));
+    filter:var(--hover-text-shadow);
+    -webkit-filter:var(--hover-text-shadow);
 }

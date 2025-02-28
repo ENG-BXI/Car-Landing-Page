@@ -20,10 +20,12 @@ const App = () => {
     scrollreveal().reveal('.feature-image-card-1 ', {...slideUp, delay: '800'});
     scrollreveal().reveal('.feature-image-card-2 ', {...slideUp, delay: '1200'});
     scrollreveal().reveal('.feature-image-card-3 ', {...slideUp, delay: '1500'});
-    scrollreveal().reveal('.companies-logo:nth-child(1),.companies-logo:nth-child(4) ,footer div:nth-child(1)', {...slideUp, distance: '40px'});
-    scrollreveal().reveal('.companies-logo:nth-child(2),.companies-logo:nth-child(5),footer div:nth-child(2)', {...slideUp, delay: 300, distance: '40px'});
-    scrollreveal().reveal('.companies-logo:nth-child(3),.companies-logo:nth-child(6),footer div:nth-child(3)', {...slideUp, delay: 500, distance: '40px'});
-    scrollreveal().reveal('footer div:nth-child(4)', {...slideUp, delay: 700, distance: '40px'});
+    scrollreveal().reveal('.companies-logo:nth-child(1) ,footer div:nth-child(1)', {...slideUp, distance: '40px'});
+    scrollreveal().reveal('.companies-logo:nth-child(2),footer div:nth-child(2)', {...slideUp, delay: 300, distance: '40px'});
+    scrollreveal().reveal('.companies-logo:nth-child(3),footer div:nth-child(3)', {...slideUp, delay: 500, distance: '40px'});
+    scrollreveal().reveal('.companies-logo:nth-child(4) ,footer div:nth-child(4)', {...slideUp, delay: 700, distance: '40px'});
+    scrollreveal().reveal('.companies-logo:nth-child(5)', {...slideUp, delay: 900, distance: '40px'});
+    scrollreveal().reveal('.companies-logo:nth-child(6)', {...slideUp, delay: 1200, distance: '40px'});
   });
   return <HomePage />;
 };

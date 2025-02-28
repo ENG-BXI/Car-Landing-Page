@@ -1,5 +1,22 @@
-.offer{
+.offer {
     background-image: url("../../../assets/img/offer-bg.png");
     background-repeat: no-repeat;
     height: 400px;
+}
+
+.offer .offer-data .offer-car {
+    width: 450px;
+    position: relative;
+    right: -7rem;
+}
+
+@media screen and (min-width:768px) {
+    .offer .offer-data {
+        min-width: 400px;
+    }
+
+    .offer .offer-data .offer-car {
+        right: 0;
+    }
+
 }

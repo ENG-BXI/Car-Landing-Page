@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './Footer.css';
 const Footer = () => {
   return (
-    <footer className='footer container d-flex flex-column row-gap-3'>
+    <footer className='footer position-relative container d-flex flex-column flex-md-row justify-content-between gap-3 '>
       <div>
         <h4 className='text-white'>Elecar</h4>
         <p>
@@ -28,12 +28,20 @@ const Footer = () => {
       <div>
         <h5 className='text-white'>Follow us</h5>
         <div className='d-flex column-gap-2 fs-4'>
-          <i className='ri-facebook-fill'></i>
-          <i className='ri-instagram-line'></i>
-          <i className='ri-twitter-line'></i>
+          <a target='_blank' href='https://www.facebook.com/' rel="noreferrer">
+            <i className='ri-facebook-fill'></i>
+          </a>
+          <a target='_blank' href='https://www.instagram.com/' rel="noreferrer">
+            <i className='ri-instagram-line'></i>
+          </a>
+          <a target='_blank' href='https://twitter.com/' rel="noreferrer">
+            <i className='ri-twitter-line'></i>
+          </a>
         </div>
       </div>
-      <div className='text-center'>&#169; BXI. All rigths reserved</div>
+      <div style={{bottom: '0.5rem', left: '50%', transform: 'translateX(-50%)'}} className='copy-right position-absolute'>
+        &#169; BXI. All rigths reserved
+      </div>
     </footer>
   );
 };

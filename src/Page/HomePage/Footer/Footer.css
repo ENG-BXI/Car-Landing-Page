@@ -1,0 +1,34 @@
+.footer {
+    padding-bottom: 100px;
+    width: 70% !important;
+}
+
+.footer .copy-right {
+    color: var(--first-color-alt);
+    filter: var(--hover-text-shadow);
+    -webkit-filter: var(--hover-text-shadow);
+}
+
+.footer h6,
+.footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: transform 0.4s;
+    cursor: pointer;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+}
+
+.footer h6:hover,
+.footer a:hover {
+    transform: translateY(-0.1rem);
+    color: var(--first-color-alt);
+    filter: var(--hover-text-shadow);
+    -webkit-filter: var(--hover-text-shadow);
+    -webkit-transform: translateY(-0.1rem);
+    -moz-transform: translateY(-0.1rem);
+    -ms-transform: translateY(-0.1rem);
+    -o-transform: translateY(-0.1rem);
+}

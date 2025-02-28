@@ -10,8 +10,8 @@ const Companies = () => {
         require("../../../assets/img/logo6.png"),
     ]
   return (
-      <section id='companies' style={{height:"200px"}} className='companies container mx-auto align-content-center row row-gap-5'>
-         {CompaniesData.map((element,index)=><div key={index} className='companies-logo col-4 text-center'><img className='logo-image'   key={index} src={element} alt="LogoImage" /></div>)}
+      <section id='companies' style={{height:"200px"}} className='companies container mx-auto align-content-center justify-content-center row row-gap-5'>
+         {CompaniesData.map((element,index)=><div key={index} className='companies-logo col-4 col-md-3 col-lg-2 text-center'><img className='logo-image'   key={index} src={element} alt="LogoImage" /></div>)}
     </section>
   )
 }
