@@ -1,6 +1,5 @@
 import React from 'react';
 import logoImage from '../../assets/img/logo1.png';
-import bootstrap from 'bootstrap';
 import './Header.css';
 const Header = () => {
   return (

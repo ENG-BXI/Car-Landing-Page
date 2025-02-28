@@ -1,12 +1,11 @@
 import React from 'react';
 import HeroImage from '../../../assets/img/home.png';
-import ReactDOM from 'react-dom';
 
 import './Hero.css';
 
 let InfoList = [
   {icon: 'Km', number: '873', text: 'MILEAGE'},
-  {icon: <i className='ri-temp-cold-fill'></i>, number: '24°', text: 'TEMPERATURE'},
+  {icon: <i className='ri-temp-cold-fill'></i>, number: '25°', text: 'TEMPERATURE'},
   {icon: <i className='ri-flashlight-fill'></i>, number: '94%', text: 'BATTERY'}
 ];
 function InfoItem(props) {
@@ -22,7 +21,7 @@ function InfoItem(props) {
       </div>
     </>
   );
-}  
+}
 const Hero = () => {
   return (
     <section id='hero' className='hero container d-flex flex-column align-items-center '>
