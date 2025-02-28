@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import HomePage from './Page/HomePage/HomePage';
-import scrollreveal from '../../node_modules/scrollreveal/dist/scrollreveal';
+import scrollreveal from '../node_modules/scrollreveal/dist/scrollreveal';
 var slideUp = {
   distance: '50px',
   origin: 'top',
