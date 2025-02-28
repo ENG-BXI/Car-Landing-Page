@@ -7,6 +7,7 @@
     color: var(--first-color-alt);
     filter: var(--hover-text-shadow);
     -webkit-filter: var(--hover-text-shadow);
+    text-wrap: nowrap;
 }
 
 .footer h6,
